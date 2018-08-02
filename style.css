@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: table;
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+}
+nav {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+nav.black {
+	background: rgba(0,0,0,.8);
+	height: 80px;
+	padding: 10px 50px;
+}
+
+.logo {
+	display: inline-block;
+	transition: transform 1s;
+}
+
+.logo:hover {
+	transform: rotate(360deg);
+}
+
+nav .logo img {
+	height: 60px;
+	transition: .5s;
+}
+
+nav.black .logo img {
+	height: 60px;
+}
+
+nav ul {
+	/*float: right;*/
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+	top: 45px;
+	right: 0px;
+	transition: transform .5s;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav ul li a {
+	list-style: 80px;
+	color: #262626;
+	padding: 5px 20px;
+	font-family: 'Playfair Display', serif;
+	font-variant: small-caps;
+	font-size: 19.5px;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+nav.black ul {
+	transform: translate(0px, -20px);
+}
+
+nav.black ul li a {
+	color: #fff;
+	line-height: 60px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+	background-color: red;
+}
+
+section.sec1 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(glassboats.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+	color: white;
+	text-align: center;
+}
+
+section.sec2 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(spaceneedleblue.jpg);
+	/*background-size: cover;*/
+}
+
+section.sec3 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(sunsettrees.jpg);
+	background-size: cover;
+}
+
+section.content {
+	padding:100px;
+	transition: background-color .5s;
+}
+
+section.content:hover {
+	background-color: #efe;
+}
+
+section.content h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+}
+
+section.content p {
+	margin: 20px 0 0;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+.wrapper {
+	padding: 20px;
+}
+
+footer {
+	background-color: #81376A;
+	/*display: table-row;*/
+	height:50px;
+	text-align: center;
+	padding: 50px 0px 150px 0px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #bbf;
+}
+
+footer a:hover {
+	border-bottom: 3px solid #ef8;
+	color: #ef8;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.evaBarrettText {
+	position: relative;
+	top: 20%;
+	left: -25%;
+	font-size: 3em;
+	transition: transform .5s;
+}
+
+.evaBarrettText:hover {
+	transform: scale(1.35);
+}
+
+.webDevText {
+	position: relative;
+	width: 800px;
+	top: 70%;
+	left: 40%;
+	font-size: 5em;
+}
+
+.email {
+	color: #bbf;
+	position: relative;
+	top: 30px;
+	font-size: 20px;
+}
+
+.email span {
+	font-size: 50px;
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: -18%;
+}
+
+.icons {
+	transition: transform .5s;
+}
