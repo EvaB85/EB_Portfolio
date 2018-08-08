@@ -17,7 +17,7 @@ nav {
 	transition: .5s;
 }
 
-nav.black {
+nav.nav-bar {
 	background: rgba(0,0,0,.8);
 	height: 80px;
 	padding: 10px 50px;
@@ -37,7 +37,7 @@ nav .logo img {
 	transition: .5s;
 }
 
-nav.black .logo img {
+nav.nav-bar .logo img {
 	height: 60px;
 }
 
@@ -69,11 +69,11 @@ nav ul li a {
 	transition: all .5s;
 }
 
-nav.black ul {
+nav.nav-bar ul {
 	transform: translate(0px, -20px);
 }
 
-nav.black ul li a {
+nav.nav-bar ul li a {
 	color: #fff;
 	line-height: 60px;
 }
@@ -97,7 +97,8 @@ section.sec2 {
 	width: 100%;
 	height: 100vh;
 	background-image: url(spaceneedleblue.jpg);
-	/*background-size: cover;*/
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 section.sec3 {
