@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	display: table;
 	height: 100%;
 	width: 100%;
 	font-family: sans-serif;
@@ -108,9 +107,14 @@ section.sec3 {
 	background-size: cover;
 }
 
+.headshot {
+	padding-top: 2em;
+}
+
 section.content {
 	padding:100px;
 	transition: background-color .5s;
+	font-size: 18px;
 }
 
 section.content:hover {
@@ -135,10 +139,9 @@ section.content p {
 
 footer {
 	background-color: #81376A;
-	/*display: table-row;*/
 	height:50px;
 	text-align: center;
-	padding: 50px 0px 150px 0px;
+	padding: 50px 0px 200px 0px;
 }
 
 footer a {
@@ -187,7 +190,6 @@ footer a:hover {
 .email {
 	color: #bbf;
 	position: relative;
-	top: 30px;
 	font-size: 20px;
 }
 
@@ -200,4 +202,10 @@ footer a:hover {
 
 .icons {
 	transition: transform .5s;
+}
+
+.project-link-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2em;
 }
